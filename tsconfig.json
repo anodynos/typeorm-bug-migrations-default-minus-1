@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2017",
+    "module": "commonjs",
+    "outDir": "dist",
+    "baseUrl": "./",
+    "sourceMap": false,
+    "allowJs": false,
+    "declaration": true
+  },
+  "include": ["src/**/*.ts"],
+  "lib": ["dom", "es5", "es6", "esnext.asynciterable", "esnext"],
+  "exclude": ["node_modules"]
+}

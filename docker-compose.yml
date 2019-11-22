@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  project:
+    build:
+      context: .
+    depends_on:
+      - postgres
+    ports:
+      - '3000:80'
+    volumes:
+      - './src:/srv/src'
+      - './node_modules:/srv/node_modules' # just for dev
+    links:
+      - postgres
+
+  postgres:
+    image: postgres:10.6
+    environment:
+      POSTGRES_PASSWORD: dev
+    ports:
+      - '5433:5432'
