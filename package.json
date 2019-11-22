@@ -1,7 +1,7 @@
 {
   "name": "typeorm-bug-migrations-default-minus-1",
   "version": "0.0.1",
-  "description": "TypeORM bug #",
+  "description": "Reproduce TypeORM issue #5132",
   "scripts": {
     "migration:run": "node -r ts-node/register ./node_modules/.bin/typeorm migration:run --config src/app/ormConfig.js",
     "migration:generate": "node -r ts-node/register ./node_modules/.bin/typeorm migration:generate --dir src/app/migration -n pleaseRenameThisNewGeneratedMigration --config src/app/ormConfig.js"
